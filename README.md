@@ -22,4 +22,4 @@ Better Behavior is an Atom syntax theme originally based on [fnky's Behave synta
 ![](./screenshots/tsx.png)
 
 ## Contributing
-Work is ongoing to add additional customizations for additional languages; if you should happen to beat me to one, pull 'er and, patch 'er, and PR 'er.
+Work is ongoing to add additional customizations for additional languages; if you should happen to beat me to one, pull 'er, patch 'er, and PR 'er.
