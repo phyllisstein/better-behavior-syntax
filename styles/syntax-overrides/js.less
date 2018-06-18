@@ -1,0 +1,40 @@
+@import '../colors.less';
+
+.syntax--support.syntax--type.syntax--object.syntax--dom,
+.syntax--support.syntax--type.syntax--object.syntax--node,
+.syntax--support.syntax--variable.syntax--dom:not(.syntax--property),
+.syntax--support.syntax--variable.syntax--node,
+.syntax--support.syntax--class.syntax--console {
+  font-style: italic;
+  color: @behave-cyan;
+}
+
+.syntax--punctuation.syntax--flowtype {
+  color: @behave-purple;
+}
+
+.syntax--punctuation.syntax--definition.syntax--template-expression.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--template-expression.syntax--end {
+  color: @behave-purple;
+}
+
+.syntax--console.syntax--class,
+.syntax--storage,
+.syntax--this,
+.syntax--support.syntax--type,
+.syntax--variable.syntax--node,
+.syntax--variable.syntax--dom:not(.syntax--property) {
+  font-style: italic;
+}
+
+.syntax--meta.syntax--class.syntax--body.syntax--js > .syntax--variable,
+.syntax--object-literal.syntax--key,
+.syntax--object.syntax--key > .syntax--string,
+.syntax--meta.syntax--definition.syntax--property,
+.syntax--meta.syntax--object.syntax--flowtype > .syntax--variable {
+  color: @behave-cyan;
+}
+
+.syntax--support.syntax--constant.syntax--property-value {
+  color: @behave-green;
+}

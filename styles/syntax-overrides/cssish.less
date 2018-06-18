@@ -1,0 +1,43 @@
+@import '../colors.less';
+
+.syntax--constant.syntax--other.syntax--color,
+.syntax--constant.syntax--other.syntax--css {
+  color: @behave-cyan;
+}
+
+.syntax--keyword.syntax--less,
+.syntax--constant.syntax--language.syntax--pseudo,
+.syntax--support.syntax--function.syntax--misc {
+  color: @behave-blue;
+}
+
+.syntax--variable.syntax--scss,
+.syntax--variable.syntax--less,
+.syntax--variable.syntax--stylus {
+  color: @behave-red;
+}
+
+.syntax--punctuation.syntax--quasi.syntax--element.syntax--begin,
+.syntax--punctuation.syntax--quasi.syntax--element.syntax--end {
+  color: @behave-purple;
+}
+
+.syntax--property-name {
+  &.syntax--css,
+  &.syntax--sass,
+  &.syntax--scss {
+    font-style: italic;
+  }
+}
+
+.syntax--entity.syntax--name.syntax--tag {
+  &.syntax--css,
+  &.syntax--sass,
+  &.syntax--scss {
+    color: @behave-red;
+  }
+}
+
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--pseudo-element {
+  color: @behave-purple;
+}

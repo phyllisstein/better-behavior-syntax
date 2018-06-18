@@ -1,0 +1,151 @@
+@import '../colors.less';
+
+.syntax--markup.syntax--raw {
+  color: fade(@behave-white, 80%);
+  background-color: fade(@behave-white, 3%);
+}
+
+.syntax--linebreak.syntax--gfm {
+  background-color: fade(@behave-white, 3%);
+}
+
+.syntax--markup.syntax--heading {
+  color: @behave-yellow;
+  font-weight: bold;
+}
+
+.syntax--markup.syntax--italic,
+.syntax--markup.syntax--italic .syntax--string {
+  color: @behave-purple;
+  font-style: italic;
+}
+
+.syntax--markup.syntax--bold,
+.syntax--markup.syntax--bold .syntax--string {
+  color: @behave-pink;
+  font-weight: bold;
+}
+
+.syntax--markup.syntax--bold .syntax--markup.syntax--italic,
+.syntax--markup.syntax--bold .syntax--markup.syntax--italic .syntax--string,
+.syntax--markup.syntax--italic .syntax--markup.syntax--bold,
+.syntax--markup.syntax--italic .syntax--markup.syntax--bold .syntax--string,
+.syntax--markup.syntax--quote .syntax--markup.syntax--bold,
+.syntax--markup.syntax--quote .syntax--markup.syntax--bold .syntax--string {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.syntax--link {
+  .syntax--punctuation.syntax--definition {
+    color: @behave-blue-gray;
+    text-decoration: none !important;
+  }
+
+  .syntax--entity {
+    color: @behave-blue;
+  }
+
+  .syntax--markup.syntax--link {
+    color: @behave-green;
+    text-decoration: underline;
+  }
+}
+
+.syntax--markup.syntax--underline {
+  text-decoration: underline;
+}
+
+.syntax--markup.syntax--strike {
+  color: @behave-blue-gray;
+  text-decoration: line-through;
+}
+
+.syntax--support.syntax--quote {
+  color: @behave-white;
+  background-color: fade(@behave-white, 3%);
+}
+
+.syntax--markup.syntax--quote {
+  font-style: italic;
+  color: @behave-blue-gray;
+}
+
+.syntax--markup.syntax--code {
+  > .syntax--support {
+    background-color: fade(@behave-white, 3%);
+    color: fade(@behave-white, 80%);
+  }
+}
+
+.syntax--comment.syntax--hr {
+  font-weight: bold;
+  color: @behave-blue-gray;
+  background-color: fade(@behave-white, 3%);
+}
+
+.syntax--table {
+  color: @behave-blue-gray;
+  background-color: fade(@behave-white, 3%);
+
+  > .syntax--border {
+    color: fadeout(@behave-white, 69%);
+  }
+}
+
+.syntax--variable.syntax--list {
+  color: @behave-red;
+  font-weight: bold;
+}
+
+.syntax--critic.syntax--highlight {
+  background-color: fadeout(@behave-purple, 69%);
+  font-style: italic;
+
+  &.syntax--marker {
+    background-color: transparent;
+    color: @behave-purple;
+  }
+}
+
+.syntax--critic.syntax--addition {
+  background-color: fadeout(@behave-green, 69%);
+  font-style: italic;
+
+  &.syntax--marker {
+    background-color: transparent;
+    color: @behave-green;
+  }
+}
+
+.syntax--critic.syntax--comment {
+  background-color: fadeout(@behave-blue, 69%);
+  color: @behave-black;
+  font-style: italic;
+
+  &.syntax--marker {
+    background-color: transparent;
+    color: @behave-blue;
+  }
+}
+
+.syntax--critic.syntax--substitution {
+  background-color: fadeout(@behave-pink, 69%);
+  font-style: italic;
+
+  &.syntax--marker,
+  &.syntax--operator {
+    background-color: transparent;
+    color: @behave-pink;
+  }
+}
+
+.syntax--critic.syntax--deletion {
+  background-color: fadeout(@behave-red, 69%);
+  font-style: italic;
+
+  &.syntax--marker {
+    background-color: transparent;
+    color: @behave-red;
+  }
+}

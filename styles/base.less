@@ -1,0 +1,217 @@
+@import './colors.less';
+
+.syntax--comment,
+.syntax--punctuation.syntax--definition.syntax--comment {
+  font-style: italic;
+  color: @behave-blue-gray;
+}
+
+.syntax--string .syntax--constant.syntax--other.syntax--placeholder,
+.syntax--variable {
+  color: @syntax-text-color;
+}
+
+.syntax--invalid {
+  color: @behave-bright-white;
+  background-color: @behave-red;
+}
+
+.syntax--invalid.syntax--deprecated {
+  color: @behave-bright-white;
+  background-color: @behave-purple;
+}
+
+.syntax--keyword,
+.syntax--storage.syntax--modifier,
+.syntax--storage.syntax--type {
+  color: @behave-purple;
+}
+
+.syntax--keyword.syntax--operator,
+.syntax--keyword.syntax--control.syntax--module,
+.syntax--keyword.syntax--other.syntax--substitution,
+.syntax--keyword.syntax--other.syntax--template,
+.syntax--punctuation.syntax--definition.syntax--tag {
+  color: @behave-cyan;
+}
+
+.syntax--name.syntax--tag,
+.syntax--support.syntax--component.syntax--class,
+.syntax--meta.syntax--tag.syntax--sgml,
+.syntax--keyword.syntax--operator.syntax--parent {
+  color: @behave-pink;
+}
+
+.syntax--other.syntax--attribute-name {
+  font-style: italic;
+  color: @behave-yellow;
+}
+
+.syntax--name.syntax--function,
+.syntax--keyword.syntax--other.syntax--special-method,
+.syntax--meta.syntax--block-level,
+.syntax--support.syntax--function,
+.syntax--variable.syntax--function,
+.syntax--variable.syntax--decorator,
+.syntax--name.syntax--accessor {
+  color: @behave-blue;
+}
+
+.syntax--keyword.syntax--other.syntax--unit,
+.syntax--constant.syntax--units,
+.syntax--string.syntax--other.syntax--link,
+.syntax--support.syntax--other.syntax--variable {
+  color: @behave-green;
+}
+
+.syntax--string {
+  color: @behave-red;
+}
+
+.syntax--constant.syntax--other.syntax--key,
+.syntax--object-literal.syntax--key,
+.syntax--constant.syntax--other.syntax--keywords,
+.syntax--other.syntax--inherited-class,
+.syntax--markup.syntax--heading {
+  color: @behave-cyan;
+}
+
+.syntax--entity.syntax--inherited-class {
+  font-style: italic;
+}
+
+.syntax--constant.syntax--other.syntax--symbol,
+.syntax--support.syntax--type.syntax--primitive {
+  color: @behave-green;
+}
+
+.syntax--name.syntax--class,
+.syntax--name.syntax--type,
+.syntax--support.syntax--class,
+.syntax--support.syntax--type {
+  color: @behave-yellow;
+}
+
+.syntax--punctuation.syntax--section.syntax--embedded,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--end,
+.syntax--punctuation.syntax--definition.syntax--quasi.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--quasi.syntax--end {
+  color: @behave-purple;
+}
+
+.syntax--name.syntax--module,
+.syntax--variable.syntax--import.syntax--parameter,
+.syntax--variable.syntax--other.syntax--class,
+.syntax--variable.syntax--constant {
+  color: @behave-red;
+}
+
+.syntax--variable.syntax--language {
+  font-style: italic;
+  color: @behave-red;
+}
+
+.syntax--name.syntax--method,
+.syntax--meta.syntax--class-method .syntax--name.syntax--function,
+.syntax--meta.syntax--function-call.syntax--constructor,
+.syntax--meta.syntax--instance.syntax--constructor,
+.syntax--variable.syntax--function.syntax--constructor {
+  color: @behave-blue;
+}
+
+.syntax--variable.syntax--other.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--instance {
+  color: @behave-yellow;
+}
+
+.syntax--entity.syntax--name.syntax--type.syntax--module {
+  color: @behave-red;
+}
+
+.syntax--markup.syntax--inserted {
+  color: @behave-green;
+}
+
+.syntax--markup.syntax--deleted {
+  color: @behave-red;
+}
+
+.syntax--markup.syntax--changed {
+  color: @behave-blue;
+}
+
+.syntax--string.syntax--regexp,
+.syntax--support.syntax--type.syntax--property-name,
+.syntax--meta.syntax--definition.syntax--property {
+  color: @behave-yellow;
+}
+
+.syntax--constant.syntax--property-value {
+  color: @behave-green;
+}
+
+.syntax--constant.syntax--character.syntax--escape {
+  color: @behave-cyan;
+}
+
+.syntax--constant.syntax--numeric.syntax--line-number.syntax--find-in-files:not(.syntax--match) {
+  color: @behave-red;
+}
+
+.syntax--name.syntax--filename.syntax--find-in-files {
+  color: @behave-green;
+}
+
+.syntax--tag.syntax--decorator .syntax--name.syntax--tag,
+.syntax--tag.syntax--decorator .syntax--punctuation.syntax--definition.syntax--tag {
+  color: @behave-blue;
+}
+
+.syntax--link.syntax--hyperlink {
+  color: @behave-green;
+  text-decoration: underline;
+}
+
+.syntax--other.syntax--attribute-name,
+.syntax--storage.syntax--type,
+.syntax--support.syntax--type,
+.syntax--parameter,
+.syntax--meta.syntax--function.syntax--parameters.syntax--js > .syntax--variable.syntax--other.syntax--readwrite.syntax--js {
+  font-style: italic;
+}
+
+.syntax--parameters > .syntax--punctuation,
+.syntax--parameters.syntax--punctuation {
+  font-style: normal;
+  color: @syntax-text-color;
+}
+
+.syntax--attribute-name.syntax--class {
+  color: @behave-blue;
+  font-style: normal;
+}
+
+.syntax--constant.syntax--character,
+.syntax--constant.syntax--language,
+.syntax--constant.syntax--numeric,
+.syntax--support.syntax--constant,
+.syntax--parameter,
+.syntax--variable.syntax--parameter,
+.syntax--meta.syntax--function.syntax--parameters.syntax--js > .syntax--variable.syntax--other.syntax--readwrite.syntax--js {
+  color: @behave-pink;
+}
+
+.syntax--deprecated.syntax--git-commit,
+.syntax--illegal.syntax--git-commit {
+  background-color: inherit;
+  color: inherit;
+}
+
+.syntax--variable.syntax--other.syntax--property {
+  color: inherit;
+}
+
+.syntax--constant {
+  color: @behave-red;
+}

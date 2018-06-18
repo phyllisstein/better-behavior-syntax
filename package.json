@@ -1,0 +1,19 @@
+{
+  "name": "better-behavior-syntax",
+  "author": "Daniel P. Shannon <daniel@daniel.sh>",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "An improved Atom port of the Behave TextMate syntax.",
+  "keywords": [
+    "syntax",
+    "theme",
+    "behave"
+  ],
+  "homepage": "https://github.com/phyllisstein/better-behavior-syntax",
+  "repository": "git@github.com:phyllisstein/better-behavior-syntax.git",
+  "bugs": "https://github.com/phyllisstein/better-behavior-syntax/issues",
+  "license": "GPL-3.0",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
