@@ -2,7 +2,7 @@
   "name": "better-behavior-syntax",
   "author": "Daniel P. Shannon <daniel@daniel.sh>",
   "theme": "syntax",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An improved Atom port of the Behave TextMate syntax.",
   "keywords": [
     "syntax",
